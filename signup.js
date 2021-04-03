@@ -13,23 +13,27 @@ if(pwd.value.length<8)
 {
     pwstg.innerHTML="Password requires a min. of 8 characters";
     pwstg.style.color="red"; 
+    return false;
 }
 else if(pwd.value.length<=11 && pwd.value.length>=8)
 {
     pwstg.innerHTML="Password Strength: Poor";
     pwstg.style.color="red"; 
+    return true;
     
 }
 else if(pwd.value.length<=14)
 {
     pwstg.innerHTML="Password Strength: Medium";
-    pwstg.style.color="orange"; 
+    pwstg.style.color="orange";
+    return true; 
    
 }
 else
 {
     pwstg.innerHTML="Password Strength: Strong";
-    pwstg.style.color="Green"; 
+    pwstg.style.color="Green";
+    return true; 
     
 }
 }
@@ -136,7 +140,7 @@ function validate()
 
     function validatex()
     {
-        if(match() && phonecheck() && validate() && window.confirm("Login Successful!"))
+        if(match() && phonecheck() && validate() && strength() && window.confirm("Login Successful!"))
         {
         return true;
         }
