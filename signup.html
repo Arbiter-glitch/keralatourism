@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styleup.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="bootstrap.min.css"> 
+    <link rel="stylesheet" href="bootsrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Kerala Tourism</title>
+</head>
+<body>
+  <div class="navcont">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient" style="opacity:1; background-clip: padding-box;">
+        <div class="container-fluid">
+            <header><img src="images/logosmall.png" alt="logo" ></header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div style="padding-left: 39%;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" >
+                <a class="nav-link " aria-current="page" href="index.html" tabindex="-1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="district.html" tabindex="-1">District</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="signup.html" tabindex="-1" aria-disabled="false">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="signin.html" tabindex="-1" aria-disabled="false">Login</a>
+              </li>
+            </ul>
+            </div>
+            <form class="d-flex" style="padding-left: 3em;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+  </div>
+   
+    <form action="signin.html" class="signup" onsubmit="return validatex()">
+    
+        <h2>Sign Up</h2>
+        <br>
+        <div class="signup-cont">
+          <label >First Name</label>
+          <br>
+          <input type="text" placeholder="Enter your name." required >
+      </div>
+      <br>
+      <div class="signup-cont">
+        <label >Last Name</label>
+        <br>
+        <input type="text" placeholder="Enter your name." required>
+    </div>
+    <br>
+    <div class="signup-cont">
+      <label >Phone Number</label>
+      <br>
+      <input type="text" placeholder="Enter your Phonenumber." id="phone" onkeyup="phonecheck()" required>
+      <br>
+      <label for="phonenumber check" id="phch"></label>
+  </div>
+  
+        <div class="signup-cont">
+            <label >Email address</label>
+            <br>
+            <input type="text" placeholder="Enter your Email address." id="email" required>
+            <br>
+            <label for="emerror" id="emerror"></label>
+        </div>
+        
+        <div class="signup-cont">
+            <label >Password</label>
+            <br>
+            <input type="password" placeholder="Enter your Password." id="pwd" onkeyup="strength(); match()" required>
+            <br>
+            <label for="pwstrength" id="pwstg"></label>
+            <br>
+            <label for="pwerror" id="pwerror"></label>
+        </div>
+        
+        <div class="signup-cont">
+          <label >Confirm Password</label>
+          <br>
+          <input type="password" placeholder="Re-Enter your Password." id="repwd" onkeyup="match()" required>
+          <label for="pwmatch" id="pwmatch"></label>
+      </div>
+        
+        <p style="font-size: smaller;" >Your password must be atleast 8 characters long, contain atleast one uppercase and lower case letter and a number.</p>
+        <br>
+        <div>
+            <input id="signup-button" type="submit" value="Register">
+        </div>
+        <br>
+        <div class="login-misc">
+            <h4>Already have an account?</h4>
+            <p>Login <a href="signin.html">here!</a></p>
+        </div>
+   
+    </form>  
+ <script src="signup.js"></script>
+    <!-- footer -->
+    <footer style="background: linear-gradient( rgb(33, 216, 33),rgb(93, 93, 165)); opacity: 1;padding-top: 2p8pt;">
+        <marquee behavior="0" direction="right"><c><h6 style="color: cornsilk;padding-top: 2px;"> Copyright©2021 Kerala Tourism All rights reserved.</h6></c></marquee>
+        </footer>
+       <!-- /footer -->
+    </body>
+    </html>
