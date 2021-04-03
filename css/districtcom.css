@@ -1,0 +1,141 @@
+*{
+    padding:0;
+    margin:0;
+}
+.navcont
+{
+position:sticky;
+top: 0;
+z-index: 10;/*z index default auto, max value ±2147483647*//*Helps to stack elements in page for example create two login forms, based on z index values the stack order varies, say when a button is clicked z index changes hence stack order varies and the new form comes atop the old one.  */
+}
+body {
+
+    background:radial-gradient(rgb(88, 50, 223),yellow);
+   background-position: center;
+   background-size: 200% 200%;/*increases size of the background*/
+   animation: gradient 15s ease infinite;
+  
+    
+  } 
+  
+.p-box{
+    border: 3px solid white;
+    border-radius:4px;
+    width: 55%;
+    float: left;
+    margin-right:10px;
+    margin-left:3%;
+    height: 18em;
+    padding: 5px;
+    background-color:#cccccc;
+    opacity: 0.85;
+    background-clip: padding-box;
+}
+.p-box h3{
+text-align:center;
+text-transform: uppercase;
+padding-bottom: 5.2px;
+
+}
+.p-box p{
+    line-height: 1.25em; /*distance between lines*/
+    text-align:justify;
+}
+.p-box a{
+text-decoration:none;
+color:red;
+}
+.container h2
+{
+    margin-top:25%;
+    margin-right: 75%;
+    padding-left:6px;
+    color:black;
+    background:linear-gradient(yellow,green);
+animation: catchy;
+animation-timing-function: ease-in-out;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+border-radius: 5px;
+background-clip:padding-box;
+transform:scale3d(1.2,1.2,1.2);
+transition-duration: 15ms;
+
+
+}
+
+.container .places 
+{
+    margin-top:5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    float: left;
+}
+.row .col {
+    
+    margin-right:25px;
+    margin-bottom: 25px;
+  
+    
+}
+.container .row .col:hover{
+    
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
+    transform:scale3d(0.9,0.9,0.9);
+}
+.but{
+    margin-top:55%;
+    margin-left: 2%;
+}
+
+
+.but a{
+margin-left:18.2%;
+}
+
+.sideimg{
+    float:right;
+    margin-right:9%;
+    border:2px solid greenyellow;
+    border-radius: 3px;
+    image-rendering:auto;
+}
+@keyframes catchy
+{
+0%{
+    color:black;
+    background:-linear-gradient(greenyellow,rgb(228, 228, 13));
+    transform:scale3d(1.2,1.2,1.2);
+    transition-timing-function: ease-in-out;
+    transition-duration: 15ms;
+
+}
+50%{
+    color:white;
+    background:linear-gradient(blue,black);
+    transform:scale3d(0.8,0.8,0.8);
+    transition-timing-function: ease-in-out;
+    transition-duration: 15ms;
+
+}
+100%{
+    color:grey;
+    background-color:linear-gradient(green,grey);
+    transform:scale3d(1,1,1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 15ms;
+}
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;/*changes the background (origin)position from 0% to 50% in large background size*/
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

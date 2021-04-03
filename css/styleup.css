@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body {
+
+    background:radial-gradient(yellow,rgb(88, 50, 223));
+  } 
+  .navcont
+{
+position:sticky;
+top: 0;
+z-index: 10;/*z index default auto, max value ±2147483647*//*Helps to stack elements in page for example create two login forms, based on z index values the stack order varies, say when a button is clicked z index changes hence stack order varies and the new form comes atop the old one.  */
+}
+  
+
+
+.signup
+{
+    
+    float: center;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:beige;
+    margin-top: 7%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-bottom: 10%;
+    padding: 38px;
+    background-clip: padding-box;
+}
+.signup h2
+{
+    text-align: center;
+}
+.signup p
+{
+    
+    padding-top:6px;
+    padding-bottom: 1pt;
+    
+}
+.signup a{
+    padding-top:2px;
+    text-decoration:none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+.signup p a:hover{
+    color: yellow;
+  background:linear-gradient(black,blue );
+  transform: scale3d(0.7,0.7,0.7);
+}
+.signup input
+{   padding-top: 3px;
+    height: 1.5em;
+    width: 84% ;
+    background-color: rgb(218, 210, 210);
+    border-radius: 2px;
+    border-style:unset;
+}
+ #signup-button
+{
+     width: 86% ;
+     height: 1.8em;
+     color:white;
+     background:linear-gradient( rgb(57, 57, 216),blue);
+     border:1px solid rgb(57, 57, 216);
+     border-radius: 2px;
+     padding-bottom: 8%;
+}
+#signup-button:hover
+{
+    color:white;
+     background:linear-gradient( rgb(50, 50, 133),rgb(7, 7, 197));
+}
